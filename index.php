@@ -53,10 +53,14 @@ $year = strftime('%Y');?>
 			<!-- Навигация -->
 			<h2>Навигация по сайту</h2>
 			<!-- Меню -->
+			<?php
+			$leftMenu = [['link'=>'Домой', 'href'=>'index.php'],['link'=>'Онас', 'href'=>'about.php'],
+			['link'=>'Контакты', 'href'=>'contact.php']];
+			?>
 			<ul>
-				<li><a href='index.php'>Домой</a></li>
-				<li><a href='about.php'>О нас</a></li>
-				<li><a href='contact.php'>Контакты</a></li>
+			<li><a href='<?= $leftMenu[0]['href']?>'><?= $leftMenu[0]['link']?></a></li>
+			<li><a href='<?= $leftMenu[1]['href']?>'><?= $leftMenu[1]['link']?></a></li>
+			<li><a href='<?= $leftMenu[2]['href']?>'><?= $leftMenu[2]['link']?></a></li>
 			</ul>
 			<!-- Меню -->
 			<!-- Навигация -->
